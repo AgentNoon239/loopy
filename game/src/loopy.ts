@@ -32,7 +32,11 @@ export class Loopy {
 
   _validateLoop(): boolean {
     const solutionCopy = [...this.solution]
-    let [start, current] = solutionCopy.pop()
+
+    let edge = solutionCopy.pop()
+    if (edge === undefined) return false
+    let [start, current] = edge
+
     while (solutionCopy.length > 1) {
       const nextIndex = solutionCopy.findIndex((edge: Edge) => edge[0] === current || edge[1] === current)
       if (nextIndex === -1) return false
