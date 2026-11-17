@@ -1,0 +1,6 @@
+# Convert SVG figures to PDF with rsvg-convert, so \includegraphics{name}
+# picks up name.pdf (no Inkscape or shell-escape needed).
+add_cus_dep('svg', 'pdf', 0, 'svg2pdf');
+sub svg2pdf {
+    return system("rsvg-convert -f pdf -o \"$_[0].pdf\" \"$_[0].svg\"");
+}

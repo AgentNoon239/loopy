@@ -4,7 +4,10 @@
 \usetheme{Copenhagen}
 \usecolortheme{beaver}
 \usepackage{listings}
-\usepackage{svg}
+% SVG figures are converted to PDF by latexmk (see latexmkrc)
+\DeclareGraphicsExtensions{.pdf,.png,.jpg}
+% Scale a figure to fit the remaining slide space, keeping its aspect ratio
+\newcommand{\slidefig}[1]{\includegraphics[width=\linewidth,height=0.6\textheight,keepaspectratio]{#1}}
 
 \lstset{
   breaklines=true
@@ -68,10 +71,18 @@
 
 \begin{frame}{The clause gadget}
     The clause gadget is a polygon where exactly one edge must be saturated. Two edges between each literal prevents cross over from other variables.
+    \begin{figure}
+        \centering
+        \slidefig{images/clause_gadget}
+    \end{figure}
 \end{frame}
 
 \begin{frame}{The variable gadget}
     The variable gadget involves a diverging branch where only one side can be saturated.
+    \begin{figure}
+        \centering
+        \slidefig{images/variable_gadget}
+    \end{figure}
 \end{frame}
 
 \begin{frame}{Implementation in polynomial time}
@@ -97,7 +108,6 @@
     \begin{figure}
         \centering
         \includegraphics[height=3in]{2d_loopy.png}
-        \caption{}
     \end{figure}
 \end{frame}
 
@@ -114,11 +124,11 @@
 \end{frame}
 
 \begin{frame}{3D}
-    \begin{figure}
-        \centering
-        \includegraphics[height=3in]{3d_loopy.png}
-        \caption{}
-    \end{figure}
+    % \begin{figure}
+    %     \centering
+    %     \includegraphics[height=3in]{3d_loopy.png}
+    %     \caption{}
+    % \end{figure}
 \end{frame}
 
 \begin{frame}{Problems}
@@ -129,8 +139,7 @@
     Uniqueness is a useful constraint to have when solving by hand
     \begin{figure}
         \centering
-        \includesvg[height=3in]{uniqueness_pic_pre.svg}
-        \caption{}
+        \slidefig{images/uniqueness_counterexample}
     \end{figure}
 \end{frame}
 
@@ -162,25 +171,32 @@
 \begin{frame}{Is the reduction parsimonious}
     Our current reduction is not parsimonious. Consider $(x_1\lor x_2)\land (x_1\lor \lnot x_2) \land (\lnot x_1\lor x_2)$.
     \begin{figure}
-        Non uniqueness
+        \centering
+        \slidefig{images/non_unique}
     \end{figure}
 \end{frame}
 
 \begin{frame}{Making it parsimonious}
     For 2 variables the following structure can model an or.
     \begin{figure}
-        2-var unqiue or gadget
+        \centering
+        \slidefig{images/2-or-unique}
     \end{figure}
 \end{frame}
 
 \begin{frame}{Making it parsimonious}
     We can naively expand this to 3 variables but this is not unique for the case (0,1,1)
+    \begin{figure}
+        \centering
+        \slidefig{images/naive-3-or}
+    \end{figure}
 \end{frame}
 
 \begin{frame}{Making it parsimonious}
     We can deal with this by enforcing an extra restriction and adding this always on line for cases (1,0,0) and (0,1,0).
     \begin{figure}
-        3-var unique or gadget
+        \centering
+        \slidefig{images/true-3-or}
     \end{figure}
     This device completes our reduction but is not planar.
 \end{frame}
