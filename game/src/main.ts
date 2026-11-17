@@ -27,11 +27,22 @@ document.body.addEventListener("keypress", (e) => {
   render(...loopy, document.querySelector("canvas")!, cameraPosition)
 })
 
+function resize() {
+  const canvas = document.querySelector("canvas")!
+  canvas.width = window.innerWidth
+  canvas.height = window.innerHeight
+}
+
 let loopy: [Loopy, Vector3[]];
 
-fetch("http://localhost:8000/sat_loopy?clauses=5&variables=5&variables_per_clause=3")
+fetch("https://loopy-worker.tomgmaldenmail.workers.dev/sat_loopy?clauses=5&variables=5&variables_per_clause=3")
   .then(response => response.json())
   .then(data => {
     loopy = [new Loopy(data.vertexCount, data.edges, data.faces), data.positions]
+    resize()
     render(...loopy, document.querySelector("canvas")!, cameraPosition)
+    window.addEventListener("resize", () => {
+      resize()
+      render(...loopy, document.querySelector("canvas")!, cameraPosition)
+    })
   })

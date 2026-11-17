@@ -8,7 +8,6 @@ from sat import SATProblem
 
 def sat_to_loopy(sat: SATProblem):
     graph = Graph()
-    clause_polygons = []
     edges_for_literals: dict[int, list[Edge]] = {}
 
     for clause in sat.clauses:
@@ -16,7 +15,7 @@ def sat_to_loopy(sat: SATProblem):
         edges = [graph.add_edge(i, j) for i, j in pairwise(vertices)]
         graph.add_edge(vertices[-1], vertices[0])
 
-        clause_polygons.append(graph.add_face(vertices, 1))
+        graph.add_face(vertices, 1)
 
         for literal, edge in zip(clause, edges[::2]):
             if literal not in edges_for_literals:
@@ -36,18 +35,8 @@ def sat_to_loopy(sat: SATProblem):
         graph.add_face(start_splitter_vertices, 1)
         graph.add_face(end_splitter_vertices, 1)
 
-        create_literal_spokes(
-            graph,
-            edges_for_literals.get(variable, []),
-            start_splitter_vertices[1],
-            end_splitter_vertices[1],
-        )
-        create_literal_spokes(
-            graph,
-            edges_for_literals.get(-variable, []),
-            start_splitter_vertices[3],
-            end_splitter_vertices[3],
-        )
+        create_literal_spokes(graph, edges_for_literals.get(variable, []), start_splitter_vertices[1], end_splitter_vertices[1])
+        create_literal_spokes(graph, edges_for_literals.get(-variable, []), start_splitter_vertices[3], end_splitter_vertices[3])
 
     return graph
 
@@ -88,6 +77,6 @@ def export_2d(graph):
         f.write(render_2d(graph, arranged_vertices))
 
 
-# sat = SATProblem([{1, 2, 3}, {-1, -2, -3}, {1, -2, 3}, {4, 2, 1}, {-3, -4, -2}])
-# graph = sat_to_loopy(sat)
-# export_3d(graph)
+sat = SATProblem([{1, 2, 3}, {-1, -2, -3}, {1, -2, 3}, {4, 2, 1}, {-3, -4, -2}])
+graph = sat_to_loopy(sat)
+export_2d(graph)

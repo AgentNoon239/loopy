@@ -1,0 +1,26 @@
+{
+	"name": "loopy-worker",
+	"main": "index.ts",
+	"compatibility_date": "2026-10-06",
+	"containers": [
+		{
+			"max_instances": 1,
+			"class_name": "MyContainer",
+			"image": "../Dockerfile",
+		},
+	],
+	"durable_objects": {
+		"bindings": [
+			{
+				"name": "MY_CONTAINER",
+				"class_name": "MyContainer",
+			},
+		],
+	},
+	"exports": {
+		"MyContainer": {
+			"type": "durable-object",
+			"storage": "sqlite",
+		},
+	},
+}

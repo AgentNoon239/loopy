@@ -1,0 +1,6 @@
+venv
+__pycache__
+.git
+worker
+game
+node_modules

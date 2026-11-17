@@ -1,5 +1,6 @@
+import typing
 from itertools import pairwise
-from io import TextIOWrapper
+
 
 class Edge:
     def __init__(self, u: int, v: int):
@@ -17,10 +18,12 @@ class Edge:
     def __hash__(self):
         return hash((self.u, self.v))
 
+
 class Face:
     def __init__(self, vertices: list[int], value: int):
         self.vertices = vertices
         self.value = value
+
 
 class Graph:
     def __init__(self):
@@ -49,3 +52,18 @@ class Graph:
             "edges": [[e.u, e.v] for e in self.edges],
             "faces": [{"vertices": f.vertices, "value": f.value} for f in self.faces],
         }
+
+
+EdgeStyles = typing.Literal["default", "dotted", "filled"]
+
+
+class StyledGraph(Graph):
+    def __init__(self) -> None:
+        super().__init__()
+        self.edge_styles: dict[Edge, EdgeStyles] = {}
+
+    def add_edge(self, u: int, v: int, style: EdgeStyles = "default"):
+        edge = Edge(u, v)
+        self.edges.add(edge)
+        self.edge_styles[edge] = style
+        return edge

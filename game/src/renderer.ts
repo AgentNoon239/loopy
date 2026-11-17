@@ -322,6 +322,7 @@ function drawScene(gl: WebGLRenderingContext, programInfo: ProgramInfo, buffers:
   gl.clearDepth(1.0); // Clear everything
   gl.enable(gl.DEPTH_TEST); // Enable depth testing
   gl.depthFunc(gl.LEQUAL); // Near things obscure far things
+  gl.viewport(0, 0, gl.canvas.width, gl.canvas.height)
 
   // Clear the canvas before we start drawing on it.
 
