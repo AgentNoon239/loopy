@@ -104,7 +104,7 @@
     \lstinputlisting[firstline=25, lastline=42,basicstyle=\ttfamily\tiny]{../backend/arrangement.py}
 \end{frame}
 
-\begin{frame}{3D}
+\begin{frame}{2D}
     \begin{figure}
         \centering
         \includegraphics[height=3in]{2d_loopy.png}
@@ -121,14 +121,6 @@
             \item https://loopy.noon-tech.co.uk
         \end{itemize}
     \end{figure}
-\end{frame}
-
-\begin{frame}{3D}
-    % \begin{figure}
-    %     \centering
-    %     \includegraphics[height=3in]{3d_loopy.png}
-    %     \caption{}
-    % \end{figure}
 \end{frame}
 
 \begin{frame}{Problems}
@@ -164,7 +156,7 @@
 \end{frame}
 
 \begin{frame}{Valiant–Vazirani theorem}
-    The Valiant–Vazirani theorem states that if 3-USAT$\in$P then $RP=NP$. Using proof by popular consensus $RP\neq NP$ hence 3-USAT is NP-complete.
+    The Valiant–Vazirani theorem states that if 3-USAT$\in$P then $RP=NP$. \\ The basic idea is that by adding extra claues we can reduce the number of the solutions and each sequence has a 1/4 chance of yielding an unambiguously satisfiable instance of 3-SAT. Using proof by popular consensus $RP\neq NP$ hence 3-USAT is NP-complete.
     % Might prove this
 \end{frame}
 
@@ -208,7 +200,22 @@
 \end{frame}
 
 \begin{frame}{How to ensure planarity}
-    We already have a weaker condition whereby no edge is connected to more than two faces. This means all that would be left is constructing a gadget that can be used to replace two crossing edges. Such a structure exists but it raises a lot of problems
+    We already have a weaker condition whereby no edge is connected to more than two faces. This means all that would be left is constructing a gadget that can be used to replace two crossing edges.  We start with the easier case where one edge must be on.
+    \begin{figure}
+        \centering
+        \slidefig{images/1-opt-crossover}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{Two edges}
+    \begin{figure}
+        \centering
+        \slidefig{images/2-opt-crossover}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{Problems}
+    This two edge crossover raises several problems
     \begin{itemize}
         \item How to ensure this doesn't split the loop
         \item Does this preserve uniqueness of solutions
@@ -216,13 +223,10 @@
     \end{itemize}
 \end{frame}
 
-\begin{frame}{Why we won't be considering planarity}
-    \begin{itemize}
-        \item The questions are difficult and annoying to reason about.
-        \item I would have written a 3d version for no reason
-        \item I don't want to overun massively
-        \item Playing loopy on different topological shapes would be cool
-    \end{itemize}
+\begin{frame}{What I did instead}
+    If we don't assume the planarity we get an even more fun puzzle with different topological shapes \\
+    https://loopy.noon-tech.co.uk \\
+    Thank you for listening
 \end{frame}
 
 \end{document}

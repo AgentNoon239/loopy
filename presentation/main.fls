@@ -436,6 +436,14 @@ INPUT ./images/true-3-or.pdf
 INPUT ./loopy.c
 INPUT ./loopy.c
 INPUT ./loopy.c
+INPUT ./images/1-opt-crossover.pdf
+INPUT ./images/1-opt-crossover.pdf
+INPUT ./images/1-opt-crossover.pdf
+INPUT ./images/1-opt-crossover.pdf
+INPUT ./images/2-opt-crossover.pdf
+INPUT ./images/2-opt-crossover.pdf
+INPUT ./images/2-opt-crossover.pdf
+INPUT ./images/2-opt-crossover.pdf
 OUTPUT main.nav
 OUTPUT main.toc
 OUTPUT main.snm

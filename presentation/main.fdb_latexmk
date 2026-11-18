@@ -1,45 +1,55 @@
 # Fdb version 4
-["cusdep svg pdf images/2-or-unique"] 1794957210.56038 "images/2-or-unique.svg" "images/2-or-unique.pdf" "images/2-or-unique" 1794958399.19094 0
-  "images/2-or-unique.svg" 1794957210.31746 2445 3adeaf1f314e3da5cc8de56ad479f11c ""
+["cusdep svg pdf images/1-opt-crossover"] 1794961211.27954 "images/1-opt-crossover.svg" "images/1-opt-crossover.pdf" "images/1-opt-crossover" 1794961506.15803 0
+  "images/1-opt-crossover.svg" 1794961197.50678 1832 7a800ad58295d54de6ac4e44d62a8834 ""
+  (generated)
+  "images/1-opt-crossover.pdf"
+  (rewritten before read)
+["cusdep svg pdf images/2-opt-crossover"] 1794961211.26858 "images/2-opt-crossover.svg" "images/2-opt-crossover.pdf" "images/2-opt-crossover" 1794961506.158 0
+  "images/2-opt-crossover.svg" 1794961197.53778 3249 c34643370d02a16169c55add8452cd06 ""
+  (generated)
+  "images/2-opt-crossover.pdf"
+  (rewritten before read)
+["cusdep svg pdf images/2-or-unique"] 1794958467.90377 "images/2-or-unique.svg" "images/2-or-unique.pdf" "images/2-or-unique" 1794961506.15797 0
+  "images/2-or-unique.svg" 1794958465.307 2428 ece490f8e0fe1af312ab0da2366a9932 ""
   (generated)
   "images/2-or-unique.pdf"
   (rewritten before read)
-["cusdep svg pdf images/clause_gadget"] 1794957477.09228 "images/clause_gadget.svg" "images/clause_gadget.pdf" "images/clause_gadget" 1794958399.19092 0
+["cusdep svg pdf images/clause_gadget"] 1794957477.09228 "images/clause_gadget.svg" "images/clause_gadget.pdf" "images/clause_gadget" 1794961506.15794 0
   "images/clause_gadget.svg" 1794957467.63453 4186 a1dccbae0f311169a219a4bb2dc55472 ""
   (generated)
   "images/clause_gadget.pdf"
   (rewritten before read)
-["cusdep svg pdf images/naive-3-or"] 1794957210.53888 "images/naive-3-or.svg" "images/naive-3-or.pdf" "images/naive-3-or" 1794958399.19088 0
-  "images/naive-3-or.svg" 1794957210.35346 3758 eba4d2db972fc419c737f58458bd5508 ""
+["cusdep svg pdf images/naive-3-or"] 1794958467.89146 "images/naive-3-or.svg" "images/naive-3-or.pdf" "images/naive-3-or" 1794961506.15791 0
+  "images/naive-3-or.svg" 1794958465.341 3780 e5780634a608fbddf4cd8a1612ce637c ""
   (generated)
   "images/naive-3-or.pdf"
   (rewritten before read)
-["cusdep svg pdf images/non_unique"] 1794957210.52778 "images/non_unique.svg" "images/non_unique.pdf" "images/non_unique" 1794958399.19086 0
+["cusdep svg pdf images/non_unique"] 1794957210.52778 "images/non_unique.svg" "images/non_unique.pdf" "images/non_unique" 1794961506.15787 0
   "images/non_unique.svg" 1794957210.29446 2860 6aedf233b0b7d8bf81abae9238ea33cf ""
   (generated)
   "images/non_unique.pdf"
   (rewritten before read)
-["cusdep svg pdf images/true-3-or"] 1794958397.46739 "images/true-3-or.svg" "images/true-3-or.pdf" "images/true-3-or" 1794958399.19083 0
+["cusdep svg pdf images/true-3-or"] 1794958397.46739 "images/true-3-or.svg" "images/true-3-or.pdf" "images/true-3-or" 1794961506.15784 0
   "images/true-3-or.svg" 1794958393.70238 5575 36a2c6e54a678062913cfd54ee56b2d5 ""
   (generated)
   "images/true-3-or.pdf"
   (rewritten before read)
-["cusdep svg pdf images/uniqueness_counterexample"] 1794957552.46881 "images/uniqueness_counterexample.svg" "images/uniqueness_counterexample.pdf" "images/uniqueness_counterexample" 1794958399.1908 0
+["cusdep svg pdf images/uniqueness_counterexample"] 1794957552.46881 "images/uniqueness_counterexample.svg" "images/uniqueness_counterexample.pdf" "images/uniqueness_counterexample" 1794961506.1578 0
   "images/uniqueness_counterexample.svg" 1794957546.39318 2377 3bd882f6ff23dba8d78d2058b48dd5a2 ""
   (generated)
   "images/uniqueness_counterexample.pdf"
   (rewritten before read)
-["cusdep svg pdf images/variable_gadget"] 1794957477.07754 "images/variable_gadget.svg" "images/variable_gadget.pdf" "images/variable_gadget" 1794958399.19075 0
+["cusdep svg pdf images/variable_gadget"] 1794957477.07754 "images/variable_gadget.svg" "images/variable_gadget.pdf" "images/variable_gadget" 1794961506.1577 0
   "images/variable_gadget.svg" 1794957467.65053 2429 3bea69f670bbe58a12953ee843b9f1a2 ""
   (generated)
   "images/variable_gadget.pdf"
   (rewritten before read)
-["pdflatex"] 1794958397.48593 "/home/tom/Tom/loopy/presentation/main.tex" "main.pdf" "main" 1794958399.19097 0
+["pdflatex"] 1794961504.39833 "/home/tom/Tom/loopy/presentation/main.tex" "main.pdf" "main" 1794961506.15807 0
   "../backend/arrangement.py" 1791294748.95604 1508 2461d9ce01945870dfe8cb297a4728cb ""
   "../backend/loopy.py" 1792962233.55699 3044 a5648400d76cbf278090267fa8b11a4e ""
   "../game/src/loopy.ts" 1791298449.34589 1644 d35dfbc2524795307fd17cf31d7c8870 ""
   "/home/tom/.texlive/texmf-var/web2c/pdftex/pdflatex.fmt" 1792319389 3765587 8d9acedd5ab2c185bea678eedab29174 ""
-  "/home/tom/Tom/loopy/presentation/main.tex" 1794958397.37541 8670 d5e879d5acf465653314c142d701745d ""
+  "/home/tom/Tom/loopy/presentation/main.tex" 1794961504.29357 8871 582be46e2c35739f3f5717c4900bcb52 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1775415801 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1775415801 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1775415801 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -246,18 +256,20 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1775415801 43569 fd570f2fa160877d211e859f687312ba ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1792319472 5541339 b32eb00eb34cd5c925a7827d916d9dbd ""
   "2d_loopy.png" 1792962582.4719 156094 da46612d31aa608f6e2a4c317a961e5e ""
-  "images/2-or-unique.pdf" 1794957210.56946 1281 fd39a7848c3d2dd968b9b453e2541958 "cusdep svg pdf images/2-or-unique"
+  "images/1-opt-crossover.pdf" 1794961211.2889 1224 ebd3123ca7225c2f1cac82ca2c75f0a4 "cusdep svg pdf images/1-opt-crossover"
+  "images/2-opt-crossover.pdf" 1794961211.2779 1356 0a86d04341311352c8da1f97a12ea523 "cusdep svg pdf images/2-opt-crossover"
+  "images/2-or-unique.pdf" 1794958467.91202 1281 e0a3cdeaa62cc4fbfc98c1f1f9ee74ab "cusdep svg pdf images/2-or-unique"
   "images/clause_gadget.pdf" 1794957477.10061 1409 e60145ac41862e70267d23104c585176 "cusdep svg pdf images/clause_gadget"
-  "images/naive-3-or.pdf" 1794957210.54746 1388 eb974e7a6b465d4a8a28535b5dc1e419 "cusdep svg pdf images/naive-3-or"
+  "images/naive-3-or.pdf" 1794958467.90002 1378 b316cf646357456890bdaa61f64eb496 "cusdep svg pdf images/naive-3-or"
   "images/non_unique.pdf" 1794957210.53646 1314 b0bd384f7bf94c9c398c018b937dd890 "cusdep svg pdf images/non_unique"
   "images/true-3-or.pdf" 1794958397.47741 1535 70d4ff020d893a759451cad4710fe837 "cusdep svg pdf images/true-3-or"
   "images/uniqueness_counterexample.pdf" 1794957552.47823 1277 98b47a2198189934a240dd80761055ac "cusdep svg pdf images/uniqueness_counterexample"
   "images/variable_gadget.pdf" 1794957477.08561 1270 bec94ce5d9501eb700f81807b58e7730 "cusdep svg pdf images/variable_gadget"
   "loopy.c" 1794353255.79607 114407 51778857e11ca1610091307530bff457 ""
-  "main.aux" 1794958399.11243 4745 1d883b32e2e7cdf9472ee0c4b94118c2 "pdflatex"
-  "main.nav" 1794958399.11343 2876 537f74995c35c6a2ad0a2421b28a59b3 "pdflatex"
-  "main.out" 1794958397.99042 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "main.tex" 1794958397.37541 8670 d5e879d5acf465653314c142d701745d ""
+  "main.aux" 1794961506.07059 4874 1dc144d6c07cef054e57dee2c36133d2 "pdflatex"
+  "main.nav" 1794961506.07159 2969 5734b160ef74b140b37e35c19980d54f "pdflatex"
+  "main.out" 1794961504.95458 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "main.tex" 1794961504.29357 8871 582be46e2c35739f3f5717c4900bcb52 ""
   (generated)
   "main.aux"
   "main.log"

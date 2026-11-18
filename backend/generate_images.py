@@ -137,3 +137,29 @@ g.add_edge(24,26, "filled")
 g.vertex_count = 27
 
 render(g,"true-3-or")
+
+g = StyledGraph()
+g.add_face([0,1,2],1)
+g.add_face([0,1,3],1)
+g.add_edge(2,4,"dotted")
+g.add_edge(3,5,"dotted")
+g.add_edge(0,6,"filled")
+g.add_edge(1,7,"filled")
+g.vertex_count = 8
+
+render(g, "1-opt-crossover")
+
+g = StyledGraph()
+g.add_face(list(range(9)),1)
+g.add_edge(0,9)
+g.add_edge(2,10)
+g.add_edge(9,10)
+g.add_edge(9,11,"filled")
+g.add_edge(10,12,"filled")
+g.add_edge(4,13,"dotted")
+g.add_edge(5,14,"dotted")
+g.add_edge(6,15,"dotted")
+g.add_edge(7,16,"dotted")
+g.vertex_count = 17
+
+render(g, "2-opt-crossover")
